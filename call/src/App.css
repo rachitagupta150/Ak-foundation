@@ -1,0 +1,100 @@
+/* General Body Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background: #8f8c8c; /* Dark background for the whole page */
+  color: #e0e0e0; /* Light text color */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Container for the component */
+.make-call-container {
+  background: rgba(33, 33, 33, 0.8); /* Transparent dark background */
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  backdrop-filter: blur(15px); /* Frosted glass effect */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Light border for subtle definition */
+}
+
+/* Title Style */
+.title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-weight: bold;
+  background: linear-gradient(135deg, #0c0c0c, #0f0c0d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+/* Input Field Style */
+.input-field {
+  width: calc(100% - 20px);
+  padding: 12px;
+  margin: 15px 0;
+  border: 2px solid #ff6f61;
+  border-radius: 8px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.15); /* Semi-transparent background */
+  color: #e0e0e0; /* Light text color */
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.6);
+}
+
+/* File Input Style */
+.input-file {
+  margin: 15px 0;
+  color: #e0e0e0; /* Light text color */
+}
+
+/* Button Style */
+.button {
+  background: linear-gradient(135deg, #1c1b1b, #737271);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  margin: 15px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.button:hover {
+  background: linear-gradient(135deg, #292828, #b5b2b1);
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.button:disabled {
+  background: #312828;
+  cursor: not-allowed;
+}
+
+/* Success and Error Message Styles */
+.success-message {
+  color: #28a745;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+/* Loading State Styles */
+button:disabled {
+  background: #333;
+  cursor: not-allowed;
+}
